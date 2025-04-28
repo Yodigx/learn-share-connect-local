@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/lib/auth";
 import { Link } from "react-router-dom";
@@ -33,6 +32,17 @@ export const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
+            <Link to="/how-it-works">
+              <Button variant="ghost">How It Works</Button>
+            </Link>
+            <Link to="/about">
+              <Button variant="ghost">About Us</Button>
+            </Link>
+            <Link to="/faq">
+              <Button variant="ghost">FAQ</Button>
+            </Link>
+          </div>
           {isAuthenticated ? (
             <>
               <Link to="/dashboard">
