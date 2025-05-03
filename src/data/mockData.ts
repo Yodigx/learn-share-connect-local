@@ -29,25 +29,57 @@ export const sampleSkills: Skill[] = [
   { id: "13", name: "Marketing", category: "Professional" },
   { id: "14", name: "Math", category: "Academic" },
   { id: "15", name: "Japanese", category: "Languages" },
-  { id: "16", name: "React", category: "Technology" }
+  { id: "16", name: "React", category: "Technology" },
+  { id: "17", name: "HTML", category: "Technology" },
+  { id: "18", name: "CSS", category: "Technology" },
+  { id: "19", name: "LINUX", category: "Technology" }
 ];
 
 export const mockUsers: User[] = [
   {
-    id: "test-user",
-    username: "test_user",
-    email: "test@example.com",
-    location: "Test City",
-    bio: "Test user for matching verification",
+    id: "faculty-001",
+    username: "NABIN KUMAR MEHER",
+    email: "nabin@iiitr.ac.in",
+    location: "Raichur, India",
+    bio: "Faculty at IIIT Raichur, passionate about teaching mathematics.",
+    rating: 5.0,
+    skillsToTeach: [
+      { id: "14", name: "Math", category: "Academic" }
+    ],
+    skillsToLearn: []
+  },
+  {
+    id: "6",
+    username: "Dubacharla Gyaneshwar",
+    email: "gyanu@example.com",
+    location: "Hyderabad , India",
+    bio: "Faculty at IIIT Raichur, passionate about teaching AI DS and Machine Learning.",
     rating: 4.5,
     skillsToTeach: [
       { id: "1", name: "Python", category: "Technology" },
       { id: "2", name: "JavaScript", category: "Technology" },
-      { id: "4", name: "Spanish", category: "Languages" }
+      { id: "5", name: "Photography", category: "Arts" }
     ],
     skillsToLearn: [
       { id: "3", name: "Guitar", category: "Music" },
-      { id: "5", name: "Photography", category: "Arts" },
+      { id: "15", name: "Japanese", category: "Languages" },
+      { id: "6", name: "Cooking", category: "Cooking" }
+    ]
+  },
+  {
+    id: "2",
+    username: "Sagar Maheshwari",
+    email: "sagar@example.com",
+    location: "Jaipur, India",
+    bio: "Crazy Guy who loves Cooking",
+    rating: 4.6,
+    skillsToTeach: [
+      { id: "2", name: "JavaScript", category: "Technology" },
+      { id: "17", name: "HTML", category: "Technology" },
+      { id: "18", name: "CSS", category: "Technology" }
+    ],
+    skillsToLearn: [
+      { id: "8", name: "Yoga", category: "Sports" },
       { id: "6", name: "Cooking", category: "Cooking" }
     ]
   },
@@ -65,22 +97,6 @@ export const mockUsers: User[] = [
     skillsToLearn: [
       { id: "1", name: "Python", category: "Technology" },
       { id: "3", name: "Guitar", category: "Music" }
-    ]
-  },
-  {
-    id: "2",
-    username: "John",
-    email: "john@example.com",
-    location: "New York, USA",
-    bio: "Software engineer who loves music",
-    rating: 4.6,
-    skillsToTeach: [
-      { id: "1", name: "Python", category: "Technology" },
-      { id: "2", name: "JavaScript", category: "Technology" }
-    ],
-    skillsToLearn: [
-      { id: "3", name: "Guitar", category: "Music" },
-      { id: "6", name: "Cooking", category: "Cooking" }
     ]
   },
   {
@@ -131,22 +147,6 @@ export const mockUsers: User[] = [
       { id: "9", name: "French", category: "Languages" }
     ]
   },
-  // {
-  //   id: "1745822252491",
-  //   username: "test_user_1745822252491",
-  //   email: "testuser1745822252491@example.com",
-  //   location: "Test City",
-  //   bio: "Test user for matching verification",
-  //   rating: 4.5,
-  //   skillsToTeach: [
-  //     { id: "1", name: "Python", category: "Technology" },
-  //     { id: "6", name: "Cooking", category: "Cooking" }
-  //   ],
-  //   skillsToLearn: [
-  //     { id: "3", name: "Guitar", category: "Music" },
-  //     { id: "5", name: "Photography", category: "Arts" }
-  //   ]
-  // },
   {
     id: "user-1745822252491",
     username: "NIDAL",
@@ -164,18 +164,6 @@ export const mockUsers: User[] = [
       { id: "14", name: "Math", category: "Academic" }
     ]
   },
-  {
-    id: "faculty-001",
-    username: "NABIN KUMAR MEHER",
-    email: "nabin@iiitr.ac.in",
-    location: "Raichur, India",
-    bio: "Faculty at IIIT Raichur, passionate about teaching mathematics.",
-    rating: 5.0,
-    skillsToTeach: [
-      { id: "14", name: "Math", category: "Academic" }
-    ],
-    skillsToLearn: []
-  }
 ];
 
 export const generateMatches = (currentUserId: string): Match[] => {
