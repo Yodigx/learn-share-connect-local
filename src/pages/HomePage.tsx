@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useAuth } from "@/lib/auth";
@@ -117,49 +116,26 @@ const HomePage = () => {
             <div className="bg-gradient-to-b from-blue-50 to-blue-100 p-6 rounded-lg hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 text-gray-800">Technology</h3>
               <p className="text-gray-600 mb-3">Programming, web development, data science, and more.</p>
-              <Link to="/skills/technology" className="text-primary font-medium hover:text-blue-700 inline-flex items-center">
-                Explore <span className="ml-1">→</span>
-              </Link>
             </div>
-            
             <div className="bg-gradient-to-b from-green-50 to-green-100 p-6 rounded-lg hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 text-gray-800">Languages</h3>
               <p className="text-gray-600 mb-3">Spanish, French, Japanese, and many other languages.</p>
-              <Link to="/skills/languages" className="text-primary font-medium hover:text-blue-700 inline-flex items-center">
-                Explore <span className="ml-1">→</span>
-              </Link>
             </div>
-            
             <div className="bg-gradient-to-b from-purple-50 to-purple-100 p-6 rounded-lg hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 text-gray-800">Music</h3>
               <p className="text-gray-600 mb-3">Guitar, piano, singing, music theory, and more.</p>
-              <Link to="/skills/music" className="text-primary font-medium hover:text-blue-700 inline-flex items-center">
-                Explore <span className="ml-1">→</span>
-              </Link>
             </div>
-            
             <div className="bg-gradient-to-b from-yellow-50 to-yellow-100 p-6 rounded-lg hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 text-gray-800">Arts & Crafts</h3>
               <p className="text-gray-600 mb-3">Painting, drawing, photography, and crafting.</p>
-              <Link to="/skills/arts" className="text-primary font-medium hover:text-blue-700 inline-flex items-center">
-                Explore <span className="ml-1">→</span>
-              </Link>
             </div>
-            
             <div className="bg-gradient-to-b from-red-50 to-red-100 p-6 rounded-lg hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 text-gray-800">Sports & Fitness</h3>
               <p className="text-gray-600 mb-3">Yoga, dance, martial arts, and personal training.</p>
-              <Link to="/skills/sports" className="text-primary font-medium hover:text-blue-700 inline-flex items-center">
-                Explore <span className="ml-1">→</span>
-              </Link>
             </div>
-            
             <div className="bg-gradient-to-b from-orange-50 to-orange-100 p-6 rounded-lg hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 text-gray-800">Professional Skills</h3>
               <p className="text-gray-600 mb-3">Marketing, design, writing, and business skills.</p>
-              <Link to="/skills/professional" className="text-primary font-medium hover:text-blue-700 inline-flex items-center">
-                Explore <span className="ml-1">→</span>
-              </Link>
             </div>
           </div>
         </div>

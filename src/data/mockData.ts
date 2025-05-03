@@ -1,4 +1,3 @@
-
 import { User, Skill, Match } from "../types";
 
 export const skillCategories = [
@@ -29,18 +28,36 @@ export const sampleSkills: Skill[] = [
   { id: "12", name: "Writing", category: "Professional" },
   { id: "13", name: "Marketing", category: "Professional" },
   { id: "14", name: "Math", category: "Academic" },
-  { id: "15", name: "Japanese", category: "Languages" }
+  { id: "15", name: "Japanese", category: "Languages" },
+  { id: "16", name: "React", category: "Technology" }
 ];
 
 export const mockUsers: User[] = [
   {
+    id: "test-user",
+    username: "test_user",
+    email: "test@example.com",
+    location: "Test City",
+    bio: "Test user for matching verification",
+    rating: 4.5,
+    skillsToTeach: [
+      { id: "1", name: "Python", category: "Technology" },
+      { id: "2", name: "JavaScript", category: "Technology" },
+      { id: "4", name: "Spanish", category: "Languages" }
+    ],
+    skillsToLearn: [
+      { id: "3", name: "Guitar", category: "Music" },
+      { id: "5", name: "Photography", category: "Arts" },
+      { id: "6", name: "Cooking", category: "Cooking" }
+    ]
+  },
+  {
     id: "1",
-    username: "alice_smith",
-    email: "alice@example.com",
-    location: "New York, NY",
+    username: "Aman",
+    email: "aman@example.com",
+    location: "Delhi, India",
     bio: "Photography enthusiast and tech professional",
-    rating: 4.8,
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    rating: 4.5,
     skillsToTeach: [
       { id: "5", name: "Photography", category: "Arts" },
       { id: "9", name: "French", category: "Languages" }
@@ -52,12 +69,11 @@ export const mockUsers: User[] = [
   },
   {
     id: "2",
-    username: "bob_johnson",
-    email: "bob@example.com",
-    location: "San Francisco, CA",
+    username: "John",
+    email: "john@example.com",
+    location: "New York, USA",
     bio: "Software engineer who loves music",
-    rating: 4.5,
-    avatar: "https://randomuser.me/api/portraits/men/22.jpg",
+    rating: 4.6,
     skillsToTeach: [
       { id: "1", name: "Python", category: "Technology" },
       { id: "2", name: "JavaScript", category: "Technology" }
@@ -69,12 +85,11 @@ export const mockUsers: User[] = [
   },
   {
     id: "3",
-    username: "carol_white",
-    email: "carol@example.com",
-    location: "Austin, TX",
+    username: "Aditya",
+    email: "aditya@example.com",
+    location: "Mumbai, India",
     bio: "Music teacher and language learner",
-    rating: 4.9,
-    avatar: "https://randomuser.me/api/portraits/women/67.jpg",
+    rating: 4.8,
     skillsToTeach: [
       { id: "3", name: "Guitar", category: "Music" },
       { id: "11", name: "Singing", category: "Music" }
@@ -86,29 +101,27 @@ export const mockUsers: User[] = [
   },
   {
     id: "4",
-    username: "dave_miller",
-    email: "dave@example.com",
-    location: "Chicago, IL",
-    bio: "Passionate about languages and cooking",
-    rating: 4.3,
-    avatar: "https://randomuser.me/api/portraits/men/43.jpg",
+    username: "Shreyas_Ingle",
+    email: "shreyas@example.com",
+    location: "Nagpur, India",
+    bio: "Passionate about languages and Technology",
+    rating: 4.5,
     skillsToTeach: [
       { id: "4", name: "Spanish", category: "Languages" },
       { id: "6", name: "Cooking", category: "Cooking" }
     ],
     skillsToLearn: [
       { id: "2", name: "JavaScript", category: "Technology" },
-      { id: "10", name: "Gardening", category: "Crafts" }
+      { id: "16", name: "React", category: "Technology" }
     ]
   },
   {
     id: "5",
-    username: "emma_taylor",
-    email: "emma@example.com", 
-    location: "Seattle, WA",
+    username: "Ayushi",
+    email: "ayushi@example.com", 
+    location: "Kanpur, India",
     bio: "Crafts enthusiast and budding photographer",
     rating: 4.7,
-    avatar: "https://randomuser.me/api/portraits/women/33.jpg",
     skillsToTeach: [
       { id: "10", name: "Gardening", category: "Crafts" },
       { id: "7", name: "Painting", category: "Arts" }
@@ -117,6 +130,51 @@ export const mockUsers: User[] = [
       { id: "5", name: "Photography", category: "Arts" },
       { id: "9", name: "French", category: "Languages" }
     ]
+  },
+  // {
+  //   id: "1745822252491",
+  //   username: "test_user_1745822252491",
+  //   email: "testuser1745822252491@example.com",
+  //   location: "Test City",
+  //   bio: "Test user for matching verification",
+  //   rating: 4.5,
+  //   skillsToTeach: [
+  //     { id: "1", name: "Python", category: "Technology" },
+  //     { id: "6", name: "Cooking", category: "Cooking" }
+  //   ],
+  //   skillsToLearn: [
+  //     { id: "3", name: "Guitar", category: "Music" },
+  //     { id: "5", name: "Photography", category: "Arts" }
+  //   ]
+  // },
+  {
+    id: "user-1745822252491",
+    username: "NIDAL",
+    email: "cs24b1039@iiitr.ac.in",
+    location: "Test City",
+    bio: "Test user for matching verification",
+    rating: 4.5,
+    skillsToTeach: [
+      { id: "1", name: "Python", category: "Technology" },
+      { id: "6", name: "Cooking", category: "Cooking" }
+    ],
+    skillsToLearn: [
+      { id: "3", name: "Guitar", category: "Music" },
+      { id: "5", name: "Photography", category: "Arts" },
+      { id: "14", name: "Math", category: "Academic" }
+    ]
+  },
+  {
+    id: "faculty-001",
+    username: "NABIN KUMAR MEHER",
+    email: "nabin@iiitr.ac.in",
+    location: "Raichur, India",
+    bio: "Faculty at IIIT Raichur, passionate about teaching mathematics.",
+    rating: 5.0,
+    skillsToTeach: [
+      { id: "14", name: "Math", category: "Academic" }
+    ],
+    skillsToLearn: []
   }
 ];
 

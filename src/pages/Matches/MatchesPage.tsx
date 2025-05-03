@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import { UserCard } from "@/components/User/UserCard";
@@ -19,6 +18,8 @@ const MatchesPage = () => {
   useEffect(() => {
     if (user) {
       const userMatches = generateMatches(user.id);
+      console.log('Generated matches for user:', user.id);
+      console.log('Matches:', userMatches);
       setMatches(userMatches);
       setFilteredMatches(userMatches);
     }
