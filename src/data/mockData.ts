@@ -76,27 +76,28 @@ export const mockUsers: User[] = [
     skillsToTeach: [
       { id: "2", name: "JavaScript", category: "Technology" },
       { id: "17", name: "HTML", category: "Technology" },
+      { id: "6", name: "Cooking", category: "Cooking" },
       { id: "18", name: "CSS", category: "Technology" }
     ],
     skillsToLearn: [
       { id: "8", name: "Yoga", category: "Sports" },
-      { id: "6", name: "Cooking", category: "Cooking" }
+      { id: "1", name: "Python", category: "Technology" },
     ]
   },
   {
     id: "1",
-    username: "Aman",
-    email: "aman@example.com",
-    location: "Delhi, India",
-    bio: "Photography enthusiast and tech professional",
+    username: "Shreyas_Ingle",
+    email: "shreyas@example.com",
+    location: "Nagpur, India",
+    bio: "Passionate about languages and Technology",
     rating: 4.5,
     skillsToTeach: [
-      { id: "5", name: "Photography", category: "Arts" },
-      { id: "9", name: "French", category: "Languages" }
+      { id: "17", name: "HTML", category: "Technology" },
+      { id: "18", name: "CSS", category: "Technology" }
     ],
     skillsToLearn: [
       { id: "1", name: "Python", category: "Technology" },
-      { id: "3", name: "Guitar", category: "Music" }
+      { id: "19", name: "LINUX", category: "Technology" }
     ]
   },
   {
@@ -105,9 +106,9 @@ export const mockUsers: User[] = [
     email: "aditya@example.com",
     location: "Mumbai, India",
     bio: "Music teacher and language learner",
-    rating: 4.8,
+    rating: 4.4,
     skillsToTeach: [
-      { id: "3", name: "Guitar", category: "Music" },
+      { id: "8", name: "Yoga", category: "Sports" },
       { id: "11", name: "Singing", category: "Music" }
     ],
     skillsToLearn: [
@@ -116,35 +117,20 @@ export const mockUsers: User[] = [
     ]
   },
   {
-    id: "4",
-    username: "Shreyas_Ingle",
-    email: "shreyas@example.com",
-    location: "Nagpur, India",
-    bio: "Passionate about languages and Technology",
-    rating: 4.5,
-    skillsToTeach: [
-      { id: "4", name: "Spanish", category: "Languages" },
-      { id: "6", name: "Cooking", category: "Cooking" }
-    ],
-    skillsToLearn: [
-      { id: "2", name: "JavaScript", category: "Technology" },
-      { id: "16", name: "React", category: "Technology" }
-    ]
-  },
-  {
     id: "5",
     username: "Ayushi",
     email: "ayushi@example.com", 
-    location: "Kanpur, India",
+    location: "Delhi, India",
     bio: "Crafts enthusiast and budding photographer",
     rating: 4.7,
     skillsToTeach: [
       { id: "10", name: "Gardening", category: "Crafts" },
-      { id: "7", name: "Painting", category: "Arts" }
+      { id: "7", name: "Painting", category: "Arts" },
+      { id: "6", name: "Cooking", category: "Cooking" }
     ],
     skillsToLearn: [
       { id: "5", name: "Photography", category: "Arts" },
-      { id: "9", name: "French", category: "Languages" }
+      { id: "12", name: "Writing", category: "Professional" }
     ]
   },
   {
@@ -156,7 +142,8 @@ export const mockUsers: User[] = [
     rating: 4.5,
     skillsToTeach: [
       { id: "1", name: "Python", category: "Technology" },
-      { id: "6", name: "Cooking", category: "Cooking" }
+      { id: "6", name: "Cooking", category: "Cooking" },
+      { id: "12", name: "Writing", category: "Professional" }
     ],
     skillsToLearn: [
       { id: "3", name: "Guitar", category: "Music" },
