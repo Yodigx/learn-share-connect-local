@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
@@ -73,10 +72,22 @@ const UserProfilePage = () => {
 
   // Handle contact button
   const handleContact = () => {
-    toast({
-      title: "Coming Soon",
-      description: `Direct messaging will be available in a future update.`,
-    });
+    if (user.username === "NABIN KUMAR MEHER") {
+      toast({
+        title: "Contact Information",
+        description: `Email: nabinmeher@iiitr.ac.in`,
+      });
+    } else if (user.username === "GYANESHWAR") {
+      toast({
+        title: "Contact Information",
+        description: `Email: dgyaneshwar@iiitr.ac.in`,
+      });
+    } else {
+      toast({
+        title: "Coming Soon",
+        description: `Direct messaging will be available in a future update.`,
+      });
+    }
   };
 
   return (
