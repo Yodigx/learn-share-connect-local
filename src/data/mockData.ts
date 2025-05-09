@@ -39,7 +39,7 @@ export const mockUsers: User[] = [
   {
     id: "faculty-001",
     username: "NABIN KUMAR MEHER",
-    email: "nabin@iiitr.ac.in",
+    email: "nabinmeher@iiitr.ac.in",
     location: "Raichur, India",
     bio: "Faculty at IIIT Raichur, passionate about teaching mathematics.",
     rating: 5.0,
@@ -55,7 +55,7 @@ export const mockUsers: User[] = [
   {
     id: "6",
     username: "Dubacharla Gyaneshwar",
-    email: "gyanu@example.com",
+    email: "dgyaneshwar@iiitr.ac.in",
     location: "Hyderabad , India",
     bio: "Faculty at IIIT Raichur, passionate about teaching AI DS and Machine Learning.",
     rating: 4.5,
@@ -78,8 +78,8 @@ export const mockUsers: User[] = [
     rating: 4.6,
     skillsToTeach: [
       { id: "6", name: "Cooking", category: "Cooking" },
-      { id: "8", name: "Yoga", category: "Sports" },
-      { id: "11", name: "Singing", category: "Music" }
+      { id: "8", name: "Yoga", category: "Sports" }
+      // { id: "11", name: "Singing", category: "Music" }
     ],
     skillsToLearn: [
       { id: "3", name: "Guitar", category: "Music" },
